@@ -15,6 +15,7 @@ public class MyTest {
     @AfterEach
     void tearDown() {
         System.out.println("tearDown");
+        System.out.println("tearDfgjjgown");
 
     }
     @AfterAll
