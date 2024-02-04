@@ -2,8 +2,6 @@ name: CI
 
 on:
   push:
-  #schedule:
-  #  - cron: '0 12,17 * * *'
 
 jobs:
   test:
