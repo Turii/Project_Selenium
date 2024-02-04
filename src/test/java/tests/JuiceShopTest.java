@@ -13,10 +13,10 @@ public class JuiceShopTest extends BaseTest{
     public void testLogin() {
         getDriver().get("https://www.saucedemo.com/");
         String firstProduct = new JuiceShopLoginPage(getDriver())
-                .enterLogin(EMAIL)
-                //.enterLogin("standard_user")
-                .enterPassword(PASSWORD)
-                //.enterPassword("secret_sauce")
+                //.enterLogin(EMAIL)
+                .enterLogin("standard_user")
+                //.enterPassword(PASSWORD)
+                .enterPassword("secret_sauce")
                 .loginUser()
                 .getFirstProductButton();
 

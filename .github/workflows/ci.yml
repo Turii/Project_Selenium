@@ -45,4 +45,3 @@ jobs:
           name: report
           path: target/surefire-reports/emailable-report.html
 
-
