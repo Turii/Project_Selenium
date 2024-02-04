@@ -17,10 +17,10 @@ public class JuiceShopTest extends BaseTest{
 //        String bb = new JuiceShopLoginPage(getDriver()).loginButtonNae();
 //        System.out.println("Email: ??????????????????????????????" + bb );
         String firstProduct = new JuiceShopLoginPage(getDriver())
-                //.enterLogin(EMAIL)
-                .enterLogin("standard_user")
-                //.enterPassword(PASSWORD)
-                .enterPassword("secret_sauce")
+                .enterLogin(EMAIL)
+                //.enterLogin("standard_user")
+                .enterPassword(PASSWORD)
+                //.enterPassword("secret_sauce")
                 .loginUser()
                 .getFirstProductButton();
 
