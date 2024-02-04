@@ -1,4 +1,5 @@
-name: CI
+name: Hello World CI
+
 
 on:
   push:
@@ -6,8 +7,7 @@ on:
   #  - cron: '0 12,22 * * *'
 
 jobs:
-  test:
-    name: 'Run tests'
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -44,4 +44,5 @@ jobs:
         with:
           name: report
           path: target/surefire-reports/emailable-report.html
+
 
