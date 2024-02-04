@@ -12,8 +12,6 @@ public class JuiceShopTest extends BaseTest{
     @Test
     public void testLogin() {
         getDriver().get("https://www.saucedemo.com/");
-//        String bb = new JuiceShopLoginPage(getDriver()).loginButtonNae();
-//        System.out.println("Email: ??????????????????????????????" + bb );
         String firstProduct = new JuiceShopLoginPage(getDriver())
                 .enterLogin(EMAIL)
                 //.enterLogin("standard_user")
