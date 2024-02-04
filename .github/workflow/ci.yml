@@ -26,8 +26,8 @@ jobs:
 
       - name: Build with Maven
         env:
-          DICE_EMAIL: ${{ secrets.JUCIE_SHOP_EMAIL }}
-          DICE_PSWD: ${{ secrets.JUCIE_SHOP_PASSWORD }}
+          JUICE_SHOP_EMAIL: ${{ secrets.JUICE_SHOP_EMAIL }}
+          JUICE_SHOP_PASSWORD: ${{ secrets.JUICE_SHOP_PASSWORD }}
         run: mvn -B package --file pom.xml
 
       - name: Attach screenshots and reports

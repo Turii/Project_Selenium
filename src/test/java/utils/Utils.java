@@ -24,8 +24,9 @@ public class Utils {
     }
 
     public static void get(WebDriver driver) {
-        driver.get("https://juice-shop.herokuapp.com/#/");
+        driver.get("https://juice-shop.herokuapp.com/#/login");
     }
+
     public static void takeScreenshot(WebDriver driver, String methodName, String className) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy_MM_dd_hhmmss");
         String date = simpleDateFormat.format(new Date());
@@ -49,14 +50,17 @@ public class Utils {
     }
 
     public static String getLogin() {
+
         return getProperties().getProperty("username");
     }
 
     public static String getPassword() {
+
         return getProperties().getProperty("password");
     }
 
     public static void log(String str) {
+
         System.out.println(str);
     }
 
