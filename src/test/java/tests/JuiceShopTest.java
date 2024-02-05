@@ -1,7 +1,6 @@
 package tests;
 
 import model.JuiceShopLoginPage;
-import model.JuiceShopPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
