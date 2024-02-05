@@ -28,6 +28,7 @@ jobs:
         env:
           JUICE_SHOP_EMAIL: ${{ secrets.JUICE_SHOP_EMAIL }}
           JUICE_SHOP_PASSWORD: ${{ secrets.JUICE_SHOP_PASSWORD }}
+          CI_RUN: true
         run: mvn -B package --file pom.xml
 
       - name: Attach screenshots and reports
