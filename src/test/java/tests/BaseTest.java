@@ -26,8 +26,8 @@ public abstract class BaseTest {
     protected void initProperties() {
         boolean isServerRun = System.getenv("CI_RUN") != null;
         if (isServerRun) {
-//            System.setProperty("JUICE_SHOP_EMAIL", System.getenv("JUICE_SHOP_EMAIL"));
-//            System.setProperty("JUICE_SHOP_PASSWORD", System.getenv("JUICE_SHOP_PASSWORD"));
+           System.setProperty("JUICE_SHOP_EMAIL", System.getenv("JUICE_SHOP_EMAIL"));
+           System.setProperty("JUICE_SHOP_PASSWORD", System.getenv("JUICE_SHOP_PASSWORD"));
         } else {
             try {
                 InputStream inputStream = BaseTest.class.getClassLoader().getResourceAsStream("local.properties");
