@@ -2,6 +2,7 @@ package tests;
 
 import model.JuiceShopLoginPage;
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
 public class JuiceShopTest extends BaseTest{
